@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class TrackServiceImpl implements TrackService{
+public class TrackServiceImpl implements TrackService {
 
 
     private final TrackRepository trackRepository;
@@ -19,8 +19,8 @@ public class TrackServiceImpl implements TrackService{
     }
 
     @Override
-    public Track saveTrack(Track track) {
-        return trackRepository.save(track);
+    public void saveTrack(Track track) {
+        trackRepository.save(track);
     }
 
     @Override
